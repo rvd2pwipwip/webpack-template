@@ -7,8 +7,9 @@ module.exports = {
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
+    clean: true,
   },
-  devtool: 'inline-source-map',
+  devtool: 'inline-source-map', // vs 'eval-source-map'?
   devServer: {
     watchFiles: ['./src/index.html'],
     static: './dist',
